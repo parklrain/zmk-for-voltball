@@ -14,34 +14,29 @@
     combos {
         compatible = "zmk,combos";
 
-        combo1 {
+        combo_lpar {
             bindings = <&kp LPAR>;
             key-positions = <2 3>;
         };
 
-        combo2 {
+        combo_rpar {
             bindings = <&kp RPAR>;
             key-positions = <6 7>;
         };
 
-        combo7 {
-            bindings = <&kp NON_US_BACKSLASH>;
+        combo_bslh {
+            bindings = <&kp BSLH>;
             key-positions = <4 5>;
         };
 
-        combo8 {
+        combo_pipe {
             bindings = <&kp PIPE>;
             key-positions = <14 15>;
         };
 
-        combo9 {
+        combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <18 19>;
-        };
-
-        combo10 {
-            bindings = <&mo 5>;
-            key-positions = <11 12>;
+            key-positions = <19 31>;
         };
 
         combo_lclk {
@@ -82,6 +77,34 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             slow-release;
+        };
+
+        combo_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <20 10>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <21 11>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <22 12>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <23 13>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
         };
     };
 
@@ -151,57 +174,68 @@
             display-name = "BASE";
         };
 
-        NUM {
+        num_layer {
             bindings = <
-&kp TAB    &kp N7  &kp N8  &kp N9   &kp MINUS                      &kp HOME         &kp END   &kp N8    &kp N9     &kp N0
-&kp ASTRK  &kp N4  &kp N5  &kp N6   &kp PLUS                       &kp PG_UP        &kp LEFT  &kp UP    &kp RIGHT  &kp SQT
-&trans     &kp N1  &kp N2  &kp N3   &kp COMMA  &trans      &trans  &kp PAGE_DOWN    &kp LBKT  &kp DOWN  &kp RBKT   &trans
-&trans     &trans  &trans  &kp DOT  &kp N0     &trans      &trans  &kp RIGHT_SHIFT                      &trans     &trans
+&kp GRAVE  &kp N7  &kp N8  &kp N9   &kp MINUS                         &kp HOME         &kp END   &kp INS   &kp DEL    &kp BSPC
+&kp ASTRK  &kp N4  &kp N5  &kp N6   &kp PLUS                          &kp PG_UP        &kp LEFT  &kp UP    &kp RIGHT  &kp SQT
+&kp COMMA  &kp N1  &kp N2  &kp N3   &kp EQUAL  &kp ENTER      &trans  &kp PAGE_DOWN    &kp LBKT  &kp DOWN  &kp RBKT   &trans
+&trans     &trans  &trans  &kp DOT  &kp N0     &trans         &trans  &kp RIGHT_SHIFT                      &trans     &trans
             >;
 
             display-name = "NUM";
         };
 
-        layer_2 {
+        sym_layer {
             bindings = <
-&kp ESC     &trans  &trans  &trans  &trans                      &trans  &kp HOME  &kp UP_ARROW  &kp END    &bootloader
-&kp CAPS    &trans  &trans  &trans  &trans                      &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&kp DELETE  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans        &trans     &trans
-&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans     &trans
+&kp TILDE   &kp AMPS  &kp ASTRK  &trans     &kp UNDER                      &kp K_MUTE    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp DEL
+&kp CAPS    &kp DLLR  &kp PRCNT  &kp CARET  &kp BSLH                       &kp C_VOL_UP  &kp LEFT    &kp UP            &kp RIGHT   &kp ENTER
+&caps_word  &kp EXCL  &kp AT     &kp HASH   &kp PIPE   &trans      &trans  &kp C_VOL_DN  &kp LBRC    &kp DOWN          &kp RBRC    &trans
+&trans      &trans    &trans     &kp LPAR   &kp RPAR   &trans      &trans  &trans                                      &trans      &trans
             >;
 
             display-name = "SYM";
         };
 
-        MOUSE {
+        fnc_layer {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                         &trans  &trans    &trans    &trans    &trans
-&trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans                         &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans    &trans    &trans    &trans     &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans    &trans    &trans    &kp LCTRL  &trans      &trans  &trans                      &trans    &trans
+&trans  &trans  &trans  &trans  &trans                         &trans  &kp F7  &kp F8  &kp F9  &kp F12
+&trans  &trans  &trans  &trans  &trans                         &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10
+&trans  &trans  &trans  &trans  &kp LCTRL  &trans      &trans  &trans                  &trans  &trans
             >;
 
-            display-name = "MOUSE";
+            display-name = "FNC";
         };
 
-        BT {
+        sys_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &trans        &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans      &trans
+&trans        &trans        &trans        &trans        &trans                            &trans      &trans          &trans  &trans      &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans      &trans          &trans  &trans      &trans
+&bootloader   &sys_reset    &trans        &trans        &trans        &trans      &trans  &trans                              &sys_reset  &bootloader
             >;
 
-            display-name = "BT";
+            display-name = "SYS";
         };
 
-        SCROLL {
+        scr_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                  &trans  &trans
             >;
+
+            label = "SCR";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        SYS_LAYER {
+            if-layers = <1 3>;
+            then-layer = <4>;
         };
     };
 };
