@@ -121,7 +121,7 @@
      * 中文: 普通轨迹球模式。移动超过阈值后临时进入第 3 层 500ms。
      * English: Normal trackball mode activate layer 3 for 500 ms after threshold movement.
      */
-    input-processors = <&zip_threshold_temp_layer 3 500>;
+    /* input-processors = <&zip_threshold_temp_layer 3 500>; */
 
     /*
      * 中文: 第 1 层把轨迹球移动转换为上下左右方向键。
