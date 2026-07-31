@@ -38,8 +38,8 @@ layers:
   - LALT
   - {t: TAB, h: NUM}
   - {t: SPACE, h: SYM}
-  - {t: ENTER, h: FNC}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
+  - {t: ENTER, h: NUM}
   - {t: BACKSPACE, h: SYM}
   - RALT
   - RCTRL
@@ -82,7 +82,7 @@ layers:
   - {t: ., type: held}
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   - RIGHT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -167,7 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LCTRL
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -210,8 +210,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '&sys_reset'
   - '&bootloader'
