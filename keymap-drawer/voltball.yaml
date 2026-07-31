@@ -37,12 +37,12 @@ layers:
   - LGUI
   - LALT
   - {t: TAB, h: NUM}
-  - {t: SPACE, h: SYM}
-  - {t: ENTER, h: FNC}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
-  - {t: BACKSPACE, h: NUM}
+  - {t: ENTER, h: FNC}
+  - {t: BSPC, h: SYM}
+  - {t: SPACE, h: NUM}
   - RALT
-  - {t: RCTRL, h: SYM}
+  - {t: RCTRL, h: FNC}
   NUM:
   - '`'
   - '7'
@@ -123,12 +123,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - (
-  - {t: ), type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - )
   - {t: ▽, type: trans}
   - {type: held alternate}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   FNC:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -171,7 +171,7 @@ layers:
   - {type: held alternate}
   - {type: held alternate}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   SYS:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -214,7 +214,7 @@ layers:
   - {type: held}
   - {type: held}
   - '&sys_reset'
-  - '&bootloader'
+  - {t: '&bootloader', type: held}
   SCR:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
