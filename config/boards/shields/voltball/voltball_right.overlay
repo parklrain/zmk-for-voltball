@@ -144,6 +144,6 @@
             /* 中文: 反转滚动 Y 轴；English: Invert the scroll Y axis. */
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             /* 中文: 将滚动量缩放为 1/10；English: Scale scroll amount to 1/10. */
-            <&zip_scroll_scaler 1 10>;
+            <&zip_scroll_scaler 1 20>;
     };
 };
