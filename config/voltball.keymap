@@ -191,7 +191,6 @@
             bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <1000>;
-            key-positions = <0>;
         };
 
         magic_shft_tap: magic_shft_tap {
