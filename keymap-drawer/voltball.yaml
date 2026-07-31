@@ -36,10 +36,10 @@ layers:
   - LCTRL
   - LGUI
   - LALT
-  - {t: ESC, h: NUM}
+  - {t: TAB, h: NUM}
   - {t: SPACE, h: SYM}
-  - {t: TAB, h: FNC}
-  - {t: ENTER, h: NUM}
+  - {t: ENTER, h: FNC}
+  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: BACKSPACE, h: SYM}
   - RALT
   - RCTRL
@@ -82,7 +82,7 @@ layers:
   - {t: ., type: held}
   - '0'
   - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
   - RIGHT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -211,7 +211,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&sys_reset'
   - '&bootloader'
