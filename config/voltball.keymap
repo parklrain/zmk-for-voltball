@@ -189,7 +189,7 @@
             compatible = "zmk,behavior-sticky-key";
             label = "SK_SHFT";
             bindings = <&kp>;
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             release-after-ms = <1000>;
             key-positions = <0>;
         };
