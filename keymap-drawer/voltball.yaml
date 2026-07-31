@@ -70,7 +70,7 @@ layers:
   - '3'
   - .
   - '='
-  - {t: ▽, type: trans}
+  - SPACE
   - PAGE DOWN
   - '['
   - DOWN
@@ -90,7 +90,7 @@ layers:
   - '~'
   - '&'
   - '*'
-  - RALT
+  - {t: ▽, type: trans}
   - _
   - MUTE
   - PREV
@@ -107,7 +107,7 @@ layers:
   - UP
   - RIGHT
   - '"'
-  - RCTRL
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -130,12 +130,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FNC:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - PRINTSCREEN
+  - SCROLLLOCK
+  - PAUSE BREAK
+  - RALT
+  - RCTRL
+  - {t: ▽, type: trans}
   - F7
   - F8
   - F9
@@ -145,7 +145,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SCROLLLOCK
+  - {t: ▽, type: trans}
   - F4
   - F5
   - F6
@@ -155,9 +155,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - INS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PAUSE BREAK
   - F1
   - F2
   - F3
