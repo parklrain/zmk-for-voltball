@@ -37,9 +37,9 @@ layers:
   - LGUI
   - LALT
   - {t: TAB, h: NUM}
-  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
-  - {t: ENTER, h: FNC}
   - {t: BSPC, h: SYM}
+  - {t: ENTER, h: FNC}
+  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: SPACE, h: NUM}
   - RALT
   - {t: RCTRL, h: FNC}
@@ -123,9 +123,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - (
-  - )
+  - {t: ), type: held alternate}
   - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
