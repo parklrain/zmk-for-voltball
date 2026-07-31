@@ -44,7 +44,7 @@ layers:
   - RALT
   - RCTRL
   NUM:
-  - TAB
+  - '`'
   - '7'
   - '8'
   - '9'
@@ -54,22 +54,22 @@ layers:
   - INS
   - BSPC
   - DEL
-  - '*'
-  - '4'
-  - '5'
-  - '6'
+  - {t: '*', h: LWIN}
+  - {t: '4', h: LALT}
+  - {t: '5', h: LSHFT}
+  - {t: '6', h: LCTRL}
   - +
   - PG UP
-  - LEFT
-  - UP
-  - RIGHT
-  - ''''
+  - {t: LEFT, h: LCTRL}
+  - {t: UP, h: RSHFT}
+  - {t: RIGHT, h: LALT}
+  - {t: '''', h: RWIN}
   - ','
   - '1'
   - '2'
   - '3'
+  - .
   - '='
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE DOWN
   - '['
@@ -79,11 +79,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ., type: held}
+  - {type: held}
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RIGHT SHIFT, type: held alternate}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
@@ -97,17 +97,17 @@ layers:
   - PLAY PAUSE
   - NEXT
   - DEL
-  - CAPS
-  - $
-  - '%'
-  - ^
+  - {t: CAPS, h: LWIN}
+  - {t: $, h: LALT}
+  - {t: '%', h: LSHFT}
+  - {t: ^, h: LCTRL}
   - \
   - VOL UP
   - LEFT
   - UP
   - RIGHT
   - '"'
-  - '`'
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
