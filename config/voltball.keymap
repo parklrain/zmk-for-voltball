@@ -111,6 +111,18 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <9 19>;
+        };
     };
 
     behaviors {
