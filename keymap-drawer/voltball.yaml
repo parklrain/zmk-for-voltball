@@ -41,8 +41,8 @@ layers:
   - {t: ENTER, h: FNC}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: BSPC, h: NUM}
-  - RALT
-  - {t: RCTRL, h: FNC}
+  - LALT
+  - LCTRL
   NUM:
   - '`'
   - '7'
@@ -90,7 +90,7 @@ layers:
   - '~'
   - '&'
   - '*'
-  - {t: ▽, type: trans}
+  - RCTRL
   - _
   - MUTE
   - PREV
@@ -107,7 +107,7 @@ layers:
   - UP
   - RIGHT
   - '"'
-  - {t: ▽, type: trans}
+  - RALT
   - '!'
   - '@'
   - '#'
@@ -171,7 +171,7 @@ layers:
   - {type: held alternate}
   - {type: held alternate}
   - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
   SYS:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -214,7 +214,7 @@ layers:
   - {type: held}
   - {type: held}
   - '&sys_reset'
-  - {t: '&bootloader', type: held}
+  - '&bootloader'
   SCR:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
