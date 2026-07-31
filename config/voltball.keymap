@@ -209,10 +209,10 @@
 
         num_layer {
             bindings = <
-&kp GRAVE        &kp N7        &kp N8         &kp N9         &kp MINUS                         &kp HOME       &kp END          &kp INS        &kp BSPC         &kp DEL
-&hml LWIN ASTRK  &hml LALT N4  &hml LSHFT N5  &hml LCTRL N6  &kp PLUS                          &kp PG_UP      &hmr LCTRL LEFT  &hmr RSHFT UP  &hmr LALT RIGHT  &hmr RWIN SQT
-&kp COMMA        &kp N1        &kp N2         &kp N3         &kp DOT    &kp EQUAL      &trans  &kp PAGE_DOWN  &kp LBKT         &kp DOWN       &kp RBKT         &trans
-&trans           &trans        &trans         &trans         &kp N0     &trans         &trans  &trans                                         &trans           &trans
+&kp GRAVE        &kp N7        &kp N8         &kp N9         &kp MINUS                            &kp HOME       &kp END          &kp INS        &kp BSPC         &kp DEL
+&hml LWIN ASTRK  &hml LALT N4  &hml LSHFT N5  &hml LCTRL N6  &kp PLUS                             &kp PG_UP      &hmr LCTRL LEFT  &hmr RSHFT UP  &hmr LALT RIGHT  &hmr RWIN SQT
+&kp COMMA        &kp N1        &kp N2         &kp N3         &kp DOT    &kp EQUAL      &kp SPACE  &kp PAGE_DOWN  &kp LBKT         &kp DOWN       &kp RBKT         &trans
+&trans           &trans        &trans         &trans         &kp N0     &trans         &trans     &trans                                         &trans           &trans
             >;
 
             display-name = "NUM";
@@ -220,9 +220,9 @@
 
         sym_layer {
             bindings = <
-&kp TILDE       &kp AMPS        &kp ASTRK         &kp RALT          &kp UNDER                      &kp K_MUTE    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp DEL
+&kp TILDE       &kp AMPS        &kp ASTRK         &trans            &kp UNDER                      &kp K_MUTE    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp DEL
 &hml LWIN CAPS  &hml LALT DLLR  &hml LSHFT PRCNT  &hml LCTRL CARET  &kp BSLH                       &kp C_VOL_UP  &kp LEFT    &kp UP            &kp RIGHT   &kp DQT
-&kp RCTRL       &kp EXCL        &kp AT            &kp HASH          &kp PIPE   &trans      &trans  &kp C_VOL_DN  &kp LBRC    &kp DOWN          &kp RBRC    &trans
+&trans          &kp EXCL        &kp AT            &kp HASH          &kp PIPE   &trans      &trans  &kp C_VOL_DN  &kp LBRC    &kp DOWN          &kp RBRC    &trans
 &trans          &trans          &trans            &kp LPAR          &kp RPAR   &trans      &trans  &trans                                      &trans      &trans
             >;
 
@@ -231,10 +231,10 @@
 
         fnc_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12
-&trans  &trans  &trans  &trans  &trans                      &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans  &trans
+&kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp RALT  &kp RCTRL                       &trans  &kp F7  &kp F8  &kp F9  &kp F12
+&trans           &trans          &trans           &trans    &trans                          &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans           &trans          &trans           &trans    &trans     &kp INS      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10
+&trans           &trans          &trans           &trans    &trans     &trans       &trans  &trans                  &trans  &trans
             >;
 
             display-name = "FNC";
