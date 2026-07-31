@@ -287,3 +287,7 @@ combos:
   k: Ctl+C
 - p: [23, 13]
   k: Ctl+V
+- p: [0, 1]
+  k: ESC
+- p: [9, 19]
+  k: BSPC
