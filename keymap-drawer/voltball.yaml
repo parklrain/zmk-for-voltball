@@ -42,7 +42,7 @@ layers:
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: BACKSPACE, h: NUM}
   - RALT
-  - RCTRL
+  - {t: RCTRL, h: SYM}
   NUM:
   - '`'
   - '7'
@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   FNC:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
