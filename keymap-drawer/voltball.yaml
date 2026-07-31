@@ -38,13 +38,13 @@ layers:
   - LALT
   - {t: TAB, h: NUM}
   - {t: SPACE, h: SYM}
+  - {t: ENTER, h: FNC}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
-  - {t: ENTER, h: NUM}
   - {t: BACKSPACE, h: SYM}
   - RALT
   - RCTRL
   NUM:
-  - '`'
+  - TAB
   - '7'
   - '8'
   - '9'
@@ -52,8 +52,8 @@ layers:
   - HOME
   - END
   - INS
-  - DEL
   - BSPC
+  - DEL
   - '*'
   - '4'
   - '5'
@@ -69,7 +69,7 @@ layers:
   - '2'
   - '3'
   - '='
-  - ENTER
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE DOWN
   - '['
@@ -82,7 +82,7 @@ layers:
   - {t: ., type: held}
   - '0'
   - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
   - RIGHT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -106,8 +106,8 @@ layers:
   - LEFT
   - UP
   - RIGHT
-  - ENTER
-  - '&caps_word'
+  - '"'
+  - '`'
   - '!'
   - '@'
   - '#'
@@ -135,7 +135,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PRINTSCREEN
   - F7
   - F8
   - F9
@@ -145,7 +145,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SCROLLLOCK
   - F4
   - F5
   - F6
@@ -157,7 +157,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAUSE BREAK
   - F1
   - F2
   - F3
@@ -166,10 +166,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held alternate}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYS:
@@ -210,9 +210,9 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - '&sys_reset'
   - '&bootloader'
   SCR:
@@ -291,3 +291,5 @@ combos:
   k: ESC
 - p: [9, 19]
   k: BSPC
+- p: [38, 39]
+  k: FNC
