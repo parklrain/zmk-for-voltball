@@ -1,4 +1,6 @@
 {
+  "id": "voltball",
+  "name": "voltball",
   "layouts": {
     "default_layout": {
       "name": "default_layout",
@@ -50,5 +52,6 @@
         { "row": 3, "col": 13, "x": 12.514, "y": 3.625 }
       ]
     }
-  }
+  },
+  "sensors": []
 }
