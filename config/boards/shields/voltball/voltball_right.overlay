@@ -122,7 +122,7 @@
      * English: Normal trackball mode activate layer 3 for 500 ms after threshold movement.
      */
     /* input-processors = <&zip_threshold_temp_layer 3 500>; */
-    input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
+    input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT INPUT_TRANSFORM_X_INVERT>;
     /*
      * 中文: 第 1 层把轨迹球移动转换为上下左右方向键。
      * English: On layer 1, convert trackball motion to arrow-key taps.
