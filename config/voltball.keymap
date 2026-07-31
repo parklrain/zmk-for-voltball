@@ -220,9 +220,9 @@
 
         sym_layer {
             bindings = <
-&kp TILDE       &kp AMPS        &kp ASTRK         &kp RCTRL         &kp UNDER                      &kp K_MUTE    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp DEL
+&kp TILDE       &kp AMPS        &kp ASTRK         &kp RALT          &kp UNDER                      &kp K_MUTE    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp DEL
 &hml LWIN CAPS  &hml LALT DLLR  &hml LSHFT PRCNT  &hml LCTRL CARET  &kp BSLH                       &kp C_VOL_UP  &kp LEFT    &kp UP            &kp RIGHT   &kp DQT
-&kp RALT        &kp EXCL        &kp AT            &kp HASH          &kp PIPE   &trans      &trans  &kp C_VOL_DN  &kp LBRC    &kp DOWN          &kp RBRC    &trans
+&kp RCTRL       &kp EXCL        &kp AT            &kp HASH          &kp PIPE   &trans      &trans  &kp C_VOL_DN  &kp LBRC    &kp DOWN          &kp RBRC    &trans
 &trans          &trans          &trans            &kp LPAR          &kp RPAR   &trans      &trans  &trans                                      &trans      &trans
             >;
 
