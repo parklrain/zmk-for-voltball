@@ -27,7 +27,7 @@ layers:
   - V
   - B
   - SCR
-  - B
+  - {t: B, h: SYM}
   - N
   - M
   - {t: ',', h: SCR}
@@ -40,7 +40,7 @@ layers:
   - {t: SPACE, h: SYM}
   - {t: ENTER, h: FNC}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
-  - {t: BACKSPACE, h: SYM}
+  - {t: BACKSPACE, h: NUM}
   - RALT
   - RCTRL
   NUM:
@@ -83,7 +83,7 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RIGHT SHIFT
+  - {t: RIGHT SHIFT, type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
@@ -113,7 +113,7 @@ layers:
   - '#'
   - '|'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - VOL DN
   - '{'
   - DOWN
@@ -123,10 +123,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - (
-  - {t: ), type: held}
+  - {t: ), type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FNC:
