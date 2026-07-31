@@ -90,7 +90,7 @@ layers:
   - '~'
   - '&'
   - '*'
-  - RCTRL
+  - RALT
   - _
   - MUTE
   - PREV
@@ -107,7 +107,7 @@ layers:
   - UP
   - RIGHT
   - '"'
-  - RALT
+  - RCTRL
   - '!'
   - '@'
   - '#'
