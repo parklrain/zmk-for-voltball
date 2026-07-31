@@ -189,8 +189,9 @@
             compatible = "zmk,behavior-sticky-key";
             label = "SK_SHFT";
             bindings = <&kp>;
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             release-after-ms = <1000>;
+            key-positions = <0>;
         };
 
         magic_shft_tap: magic_shft_tap {
