@@ -37,10 +37,10 @@ layers:
   - LGUI
   - LALT
   - {t: TAB, h: NUM}
-  - {t: BSPC, h: SYM}
+  - {t: SPACE, h: SYM}
   - {t: ENTER, h: FNC}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
-  - {t: SPACE, h: NUM}
+  - {t: BSPC, h: NUM}
   - RALT
   - {t: RCTRL, h: FNC}
   NUM:
