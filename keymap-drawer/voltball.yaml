@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LSHFT}
-  - {t: F, h: LCTRL}
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: LCTRL}
-  - {t: K, h: RSHFT}
-  - {t: L, h: LALT}
-  - {t: ;, h: RIGHT GUI}
+  - J
+  - K
+  - L
+  - ;
   - Z
   - X
   - C
@@ -122,8 +122,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - (
-  - {t: ), type: held alternate}
+  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -268,13 +268,13 @@ combos:
 - p: [14, 15]
   k: '|'
 - p: [19, 31]
-  k: ENTER
+  k: '&mkp MCLK'
 - p: [29, 17]
   k: '&mkp LCLK'
 - p: [18, 30]
   k: '&mkp RCLK'
 - p: [8, 18]
-  k: '&mkp MCLK'
+  k: LALT
 - p: [16, 28]
   k: '&mkp MB4'
 - p: [15, 27]
@@ -290,6 +290,18 @@ combos:
 - p: [0, 1]
   k: ESC
 - p: [9, 19]
-  k: BSPC
+  k: RWIN
 - p: [38, 39]
   k: FNC
+- p: [6, 16]
+  k: LCTRL
+- p: [17, 7]
+  k: RSHFT
+- p: [3, 13]
+  k: LCTRL
+- p: [2, 12]
+  k: LSHFT
+- p: [1, 11]
+  k: LALT
+- p: [10, 0]
+  k: LWIN
