@@ -54,16 +54,16 @@ layers:
   - INS
   - BSPC
   - DEL
-  - {t: '*', h: LWIN}
-  - {t: '4', h: LALT}
-  - {t: '5', h: LSHFT}
-  - {t: '6', h: LCTRL}
+  - '*'
+  - '4'
+  - '5'
+  - '6'
   - +
   - PG UP
-  - {t: LEFT, h: LCTRL}
-  - {t: UP, h: RSHFT}
-  - {t: RIGHT, h: LALT}
-  - {t: '''', h: RWIN}
+  - LEFT
+  - UP
+  - RIGHT
+  - ''''
   - ','
   - '1'
   - '2'
@@ -90,24 +90,24 @@ layers:
   - '~'
   - '&'
   - '*'
-  - {t: ▽, type: trans}
+  - RALT
   - _
   - MUTE
   - PREV
   - PLAY PAUSE
   - NEXT
   - DEL
-  - {t: CAPS, h: LWIN}
-  - {t: $, h: LALT}
-  - {t: '%', h: LSHFT}
-  - {t: ^, h: LCTRL}
+  - CAPS
+  - $
+  - '%'
+  - ^
   - \
   - VOL UP
   - LEFT
   - UP
   - RIGHT
   - '"'
-  - {t: ▽, type: trans}
+  - RCTRL
   - '!'
   - '@'
   - '#'
