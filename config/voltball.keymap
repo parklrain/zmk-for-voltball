@@ -60,11 +60,12 @@
             slow-release;
         };
 
-        combo_ralt {
-            bindings = <&kp LALT>;
-            key-positions = <8 18>;
+        combo_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <8 9>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
+            slow-release;
         };
 
         combo_prev {
@@ -118,9 +119,9 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_rwin {
-            bindings = <&kp RWIN>;
-            key-positions = <9 19>;
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
@@ -170,6 +171,20 @@
         combo_lwin {
             bindings = <&kp LWIN>;
             key-positions = <10 0>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_ralt {
+            bindings = <&kp LALT>;
+            key-positions = <8 18>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_rwin {
+            bindings = <&kp RWIN>;
+            key-positions = <9 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
