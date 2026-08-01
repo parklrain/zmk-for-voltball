@@ -273,8 +273,8 @@ combos:
   k: '&mkp LCLK'
 - p: [18, 30]
   k: '&mkp RCLK'
-- p: [8, 18]
-  k: LALT
+- p: [8, 9]
+  k: BSPC
 - p: [16, 28]
   k: '&mkp MB4'
 - p: [15, 27]
@@ -289,8 +289,8 @@ combos:
   k: Ctl+V
 - p: [0, 1]
   k: ESC
-- p: [9, 19]
-  k: RWIN
+- p: [19, 18]
+  k: ENTER
 - p: [38, 39]
   k: FNC
 - p: [6, 16]
@@ -305,3 +305,7 @@ combos:
   k: LALT
 - p: [10, 0]
   k: LWIN
+- p: [8, 18]
+  k: LALT
+- p: [9, 19]
+  k: RWIN
