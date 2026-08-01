@@ -29,16 +29,6 @@
             key-positions = <6 7>;
         };
 
-        combo_bslh {
-            bindings = <&kp BSLH>;
-            key-positions = <4 5>;
-        };
-
-        combo_pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <14 15>;
-        };
-
         combo_mclk {
             bindings = <&mkp MCLK>;
             key-positions = <19 31>;
