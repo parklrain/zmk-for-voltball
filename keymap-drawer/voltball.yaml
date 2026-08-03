@@ -263,7 +263,7 @@ combos:
   k: (
 - p: [6, 7]
   k: )
-- p: [19, 31]
+- p: [19, 18]
   k: '&mkp MCLK'
 - p: [29, 17]
   k: '&mkp LCLK'
@@ -285,7 +285,7 @@ combos:
   k: Ctl+V
 - p: [0, 1]
   k: ESC
-- p: [19, 18]
+- p: [19, 31]
   k: ENTER
 - p: [38, 39]
   k: FNC
@@ -305,3 +305,7 @@ combos:
   k: LALT
 - p: [9, 19]
   k: RWIN
+- p: [18, 16]
+  k: RALT
+- p: [17, 19]
+  k: RCTRL
