@@ -31,7 +31,7 @@
 
         combo_mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <19 31>;
+            key-positions = <19 18>;
         };
 
         combo_lclk {
@@ -111,7 +111,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <19 18>;
+            key-positions = <19 31>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
@@ -175,6 +175,20 @@
         combo_rwin {
             bindings = <&kp RWIN>;
             key-positions = <9 19>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lang {
+            bindings = <&kp RALT>;
+            key-positions = <18 16>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_hanja {
+            bindings = <&kp RCTRL>;
+            key-positions = <17 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
