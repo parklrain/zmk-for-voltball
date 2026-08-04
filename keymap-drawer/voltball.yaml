@@ -36,9 +36,9 @@ layers:
   - LCTRL
   - LGUI
   - LALT
-  - {t: TAB, h: SYM}
-  - {t: SPACE, h: NUM}
-  - {t: BSPC, h: FNC}
+  - {t: TAB, h: FNC}
+  - {t: BSPC, h: NUM}
+  - {t: ENTER, h: SYM}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: SPACE, h: NUM}
   - LALT
@@ -122,9 +122,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -165,9 +165,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held alternate}
   - {type: held alternate}
   - {t: ▽, type: trans}
@@ -208,9 +208,9 @@ layers:
   - '&bootloader'
   - '&sys_reset'
   - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {type: held}
   - {type: held}
   - '&sys_reset'
