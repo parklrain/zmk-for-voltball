@@ -309,3 +309,5 @@ combos:
   k: RALT
 - p: [17, 19]
   k: RCTRL
+- p: [27, 28]
+  k: B
