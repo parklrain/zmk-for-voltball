@@ -46,6 +46,11 @@
         };
     };
 
+    status_led_device: status_led_device {
+        compatible = "zmk,status-led";
+        led = <&status_led>;
+    };
+
     vbatt: vbatt {
         status = "disabled";
     };
@@ -53,11 +58,6 @@
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 7>;
-    };
-
-    status_led_device: status_led_device {
-        compatible = "zmk,status-led";
-        led = <&status_led>;
     };
 
     trackball_central_listener: trackball_central_listener {
