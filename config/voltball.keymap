@@ -197,7 +197,7 @@
             bindings = <&kp B>;
             key-positions = <27 28>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <70>;
+            require-prior-idle-ms = <60>;
             layers = <0>;
         };
     };
