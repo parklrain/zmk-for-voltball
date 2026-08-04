@@ -302,10 +302,10 @@
 
         fnc_layer {
             bindings = <
-&kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp RALT  &kp RCTRL                       &trans  &kp F7  &kp F8  &kp F9  &kp F12
-&trans           &trans          &trans           &trans    &trans                          &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans           &trans          &trans           &trans    &trans     &kp INS      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10
-&trans           &trans          &trans           &trans    &trans     &trans       &trans  &trans                  &trans  &trans
+&kp ESC    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                               &kp LC(Y)  &kp F7  &kp F8  &kp F9  &kp F12
+&kp LC(A)  &kp LC(S)        &trans          &trans           &trans                                &trans     &kp F4  &kp F5  &kp F6  &kp F11
+&kp LC(Z)  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)  &kp LC(LS(Z))      &trans  &trans     &kp F1  &kp F2  &kp F3  &kp F10
+&trans     &trans           &trans          &trans           &trans     &trans             &trans  &trans                     &trans  &trans
             >;
 
             display-name = "FNC";
