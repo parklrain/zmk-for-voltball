@@ -192,6 +192,13 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
+
+        combo_rb {
+            bindings = <&kp B>;
+            key-positions = <27 28>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     behaviors {
