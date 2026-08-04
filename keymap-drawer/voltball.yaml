@@ -36,94 +36,94 @@ layers:
   - LCTRL
   - LGUI
   - LALT
-  - {t: TAB, h: NUM}
-  - {t: SPACE, h: SYM}
-  - {t: ENTER, h: FNC}
+  - {t: TAB, h: SYM}
+  - {t: SPACE, h: NUM}
+  - {t: BSPC, h: FNC}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
-  - {t: BSPC, h: NUM}
+  - {t: SPACE, h: NUM}
   - LALT
   - LCTRL
   NUM:
   - '`'
+  - '['
+  - ']'
+  - BSPC
+  - DEL
+  - '-'
   - '7'
   - '8'
   - '9'
-  - '-'
-  - HOME
-  - END
-  - INS
-  - BSPC
-  - DEL
   - '*'
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - PG UP
+  - ENTER
   - LEFT
   - UP
   - RIGHT
+  - PG UP
+  - +
+  - '4'
+  - '5'
+  - '6'
   - ''''
+  - SPACE
+  - HOME
+  - DOWN
+  - END
+  - PG DN
+  - SPACE
+  - '='
   - ','
   - '1'
   - '2'
   - '3'
-  - .
-  - '='
-  - SPACE
-  - PAGE DOWN
-  - '['
-  - DOWN
-  - ']'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held alternate}
+  - .
+  - {t: '0', type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
   - '~'
+  - '{'
+  - '}'
+  - PLAY PAUSE
+  - MUTE
+  - _
   - '&'
   - '*'
-  - RALT
-  - _
-  - MUTE
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - BSPC
   - DEL
   - CAPS
-  - $
-  - '%'
-  - ^
-  - \
-  - VOL UP
   - LEFT
   - UP
   - RIGHT
+  - VOL UP
+  - \
+  - $
+  - '%'
+  - ^
   - '"'
-  - RCTRL
+  - {t: ▽, type: trans}
+  - PREV
+  - DOWN
+  - NEXT
+  - VOL DN
+  - {t: ▽, type: trans}
+  - {type: held}
+  - '|'
   - '!'
   - '@'
   - '#'
-  - '|'
-  - {t: ▽, type: trans}
-  - {type: held}
-  - VOL DN
-  - '{'
-  - DOWN
-  - '}'
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held alternate}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,8 +208,8 @@ layers:
   - '&bootloader'
   - '&sys_reset'
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {type: held}
   - {type: held}
