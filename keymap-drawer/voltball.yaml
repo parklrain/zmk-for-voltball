@@ -311,3 +311,4 @@ combos:
   k: RCTRL
 - p: [27, 28]
   k: B
+  l: [BASE]
