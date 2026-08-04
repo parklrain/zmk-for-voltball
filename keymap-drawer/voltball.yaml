@@ -130,18 +130,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FNC:
+  - ESC
   - PRINTSCREEN
   - SCROLLLOCK
   - PAUSE BREAK
-  - RALT
-  - RCTRL
-  - {t: ▽, type: trans}
+  - INS
+  - Ctl+Y
   - F7
   - F8
   - F9
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+A
+  - Ctl+S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -150,12 +150,12 @@ layers:
   - F5
   - F6
   - F11
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
+  - Ctl+Sft+Z
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
