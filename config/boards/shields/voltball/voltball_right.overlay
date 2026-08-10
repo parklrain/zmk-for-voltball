@@ -127,10 +127,10 @@
      * 中文: 第 1 层把轨迹球移动转换为上下左右方向键。
      * English: On layer 1, convert trackball motion to arrow-key taps.
      */
-    arrows {
+    /* arrows {
         layers = <1>;
         input-processors = <&zip_trackball_arrows>;
-    };
+    }; */
 
     /*
      * 中文: 第 5 层启用滚动模式，把轨迹球移动转换成滚轮事件。
