@@ -145,7 +145,7 @@ layers:
   - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
-  - {t: ▽, type: trans}
+  - HOME
   - F4
   - F5
   - F6
@@ -157,7 +157,7 @@ layers:
   - Ctl+B
   - Ctl+Sft+Z
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - END
   - F1
   - F2
   - F3
