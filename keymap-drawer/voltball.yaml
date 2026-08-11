@@ -143,8 +143,8 @@ layers:
   - Ctl+A
   - Ctl+S
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - F4
   - F5
