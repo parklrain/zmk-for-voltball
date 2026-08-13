@@ -45,36 +45,36 @@ layers:
   - LCTRL
   NUM:
   - '`'
+  - HOME
+  - END
+  - BSPC
+  - DEL
+  - '-'
   - '7'
   - '8'
   - '9'
-  - '-'
-  - HOME
-  - END
-  - {t: ▽, type: trans}
-  - BSPC
-  - DEL
   - '*'
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - PG UP
+  - ENTER
   - LEFT
   - UP
   - RIGHT
+  - PG UP
+  - +
+  - '4'
+  - '5'
+  - '6'
   - ''''
+  - {t: ▽, type: trans}
+  - '['
+  - DOWN
+  - ']'
+  - PG DN
+  - SPACE
+  - '='
   - ','
   - '1'
   - '2'
   - '3'
-  - .
-  - SPACE
-  - '='
-  - PG DN
-  - '['
-  - DOWN
-  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -82,42 +82,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: '0', type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held alternate}
+  - .
+  - {t: '0', type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
   - '~'
-  - '&'
-  - '*'
-  - BSPC
-  - _
-  - MUTE
   - PREV
   - PLAY PAUSE
   - NEXT
+  - MUTE
+  - _
+  - '&'
+  - '*'
+  - BSPC
   - DEL
   - CAPS
-  - $
-  - '%'
-  - ^
-  - \
-  - VOL UP
   - LEFT
   - UP
   - RIGHT
+  - VOL UP
+  - \
+  - $
+  - '%'
+  - ^
   - '"'
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - '|'
-  - {t: ▽, type: trans}
-  - {type: held}
-  - VOL DN
   - '{'
   - DOWN
   - '}'
+  - VOL DN
+  - {t: ▽, type: trans}
+  - {type: held}
+  - '|'
+  - '!'
+  - '@'
+  - '#'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
