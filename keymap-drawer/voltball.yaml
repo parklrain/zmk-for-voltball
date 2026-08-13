@@ -27,7 +27,7 @@ layers:
   - V
   - B
   - SCR
-  - {t: B, h: SYM}
+  - {t: B, h: FNC}
   - N
   - M
   - {t: ',', h: SCR}
@@ -37,10 +37,10 @@ layers:
   - LGUI
   - LALT
   - {t: TAB, h: FNC}
-  - {t: SPACE, h: NUM}
-  - {t: ENTER, h: SYM}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
+  - {t: ENTER, h: SYM}
   - {t: BSPC, h: NUM}
+  - {t: SPACE, h: SYM}
   - LALT
   - LCTRL
   NUM:
@@ -80,10 +80,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '0', type: held}
+  - '0'
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
-  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
@@ -113,7 +113,7 @@ layers:
   - '#'
   - '|'
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - VOL DN
   - '{'
   - DOWN
@@ -124,9 +124,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FNC:
@@ -156,7 +156,7 @@ layers:
   - Ctl+V
   - Ctl+B
   - Ctl+Sft+Z
-  - {t: ▽, type: trans}
+  - {type: held}
   - END
   - F1
   - F2
@@ -165,7 +165,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held alternate}
@@ -199,7 +199,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -209,7 +209,7 @@ layers:
   - '&sys_reset'
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
