@@ -45,79 +45,79 @@ layers:
   - LCTRL
   NUM:
   - '`'
-  - '['
-  - ']'
-  - BSPC
-  - DEL
-  - '-'
   - '7'
   - '8'
   - '9'
+  - '-'
+  - HOME
+  - END
+  - {t: ▽, type: trans}
+  - BSPC
+  - DEL
   - '*'
-  - ENTER
-  - LEFT
-  - UP
-  - RIGHT
-  - PG UP
-  - +
   - '4'
   - '5'
   - '6'
+  - +
+  - PG UP
+  - LEFT
+  - UP
+  - RIGHT
   - ''''
-  - SPACE
-  - HOME
-  - DOWN
-  - END
-  - PG DN
-  - SPACE
-  - '='
   - ','
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
   - .
-  - {t: '0', type: held alternate}
+  - SPACE
+  - '='
+  - PG DN
+  - '['
+  - DOWN
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '0', type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
   - '~'
-  - '{'
-  - '}'
-  - PLAY PAUSE
-  - MUTE
-  - _
   - '&'
   - '*'
   - BSPC
+  - _
+  - MUTE
+  - PREV
+  - PLAY PAUSE
+  - NEXT
   - DEL
   - CAPS
-  - LEFT
-  - UP
-  - RIGHT
-  - VOL UP
-  - \
   - $
   - '%'
   - ^
+  - \
+  - VOL UP
+  - LEFT
+  - UP
+  - RIGHT
   - '"'
   - {t: ▽, type: trans}
-  - PREV
-  - DOWN
-  - NEXT
-  - VOL DN
-  - {t: ▽, type: trans}
-  - {type: held}
-  - '|'
   - '!'
   - '@'
   - '#'
+  - '|'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - VOL DN
+  - '{'
+  - DOWN
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
