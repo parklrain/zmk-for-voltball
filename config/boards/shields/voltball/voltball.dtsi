@@ -3,6 +3,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 / {
@@ -10,6 +11,12 @@
         zmk,kscan = &kscan0;
         zmk,physical-layout = &voltball_layout;
         zmk,battery = &non_lipo_battery;
+    };
+
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        /* P0.31/AIN7 reads half the AA voltage through the 1M/1M divider. */
+        io-channels = <&adc 7>;
     };
 
     default_transform: keymap_transform_0 {
@@ -35,6 +42,53 @@
         display-name = "Voltball";
         kscan = <&kscan0>;
         transform = <&default_transform>;
+        keys = <
+            &key_physical_attrs 100 100    0  62   0    0   0
+            &key_physical_attrs 100 100  100  25   0    0   0
+            &key_physical_attrs 100 100  201   0   0    0   0
+            &key_physical_attrs 100 100  301  13   0    0   0
+            &key_physical_attrs 100 100  401  26   0    0   0
+            &key_physical_attrs 100 100  850  26   0    0   0
+            &key_physical_attrs 100 100  951  13   0    0   0
+            &key_physical_attrs 100 100 1051   0   0    0   0
+            &key_physical_attrs 100 100 1151  25   0    0   0
+            &key_physical_attrs 100 100 1251  62   0    0   0
+
+            &key_physical_attrs 100 100    0 162   0    0   0
+            &key_physical_attrs 100 100  100 125   0    0   0
+            &key_physical_attrs 100 100  201 100   0    0   0
+            &key_physical_attrs 100 100  301 113   0    0   0
+            &key_physical_attrs 100 100  401 127   0    0   0
+            &key_physical_attrs 100 100  850 127   0    0   0
+            &key_physical_attrs 100 100  951 114   0    0   0
+            &key_physical_attrs 100 100 1051 100   0    0   0
+            &key_physical_attrs 100 100 1151 125   0    0   0
+            &key_physical_attrs 100 100 1251 162   0    0   0
+
+            &key_physical_attrs 100 100    0 262   0    0   0
+            &key_physical_attrs 100 100  100 225   0    0   0
+            &key_physical_attrs 100 100  201 201   0    0   0
+            &key_physical_attrs 100 100  301 214   0    0   0
+            &key_physical_attrs 100 100  401 227   0    0   0
+            &key_physical_attrs 100 100  501 251   0    0   0
+            &key_physical_attrs 100 100  750 251   0    0   0
+            &key_physical_attrs 100 100  850 227   0    0   0
+            &key_physical_attrs 100 100  951 214   0    0   0
+            &key_physical_attrs 100 100 1051 201   0    0   0
+            &key_physical_attrs 100 100 1151 225   0    0   0
+            &key_physical_attrs 100 100 1251 262   0    0   0
+
+            &key_physical_attrs 100 100    0 362   0    0   0
+            &key_physical_attrs 100 100  100 326   0    0   0
+            &key_physical_attrs 100 100  200 301   0    0   0
+            &key_physical_attrs 100 100  322 353   0    0   0
+            &key_physical_attrs 100 100  434 362    900  484 412
+            &key_physical_attrs 100 100  545 391   2000  595 441
+            &key_physical_attrs 100 100  706 391 (-2000) 756 441
+            &key_physical_attrs 100 100  816 362 (-1000) 866 412
+            &key_physical_attrs 100 100 1151 326   0    0   0
+            &key_physical_attrs 100 100 1251 363   0    0   0
+        >;
     };
 
     leds {
@@ -51,19 +105,14 @@
         led = <&status_led>;
     };
 
-    vbatt: vbatt {
-        status = "disabled";
-    };
-
-    non_lipo_battery: non_lipo_battery {
-        compatible = "zmk,non-lipo-battery";
-        io-channels = <&adc 7>;
-    };
-
     trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
         /* input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
                        <&zip_temp_layer 3 500>; */
     };
+};
+
+&vbatt {
+    status = "disabled";
 };
