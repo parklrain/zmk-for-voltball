@@ -32,5 +32,16 @@ west init -l config
 west update
 west zephyr-export
 west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=voltball_left
-west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=voltball_right
+west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=voltball_right -DSNIPPET=studio-rpc-usb-uart
 ```
+
+## ZMK Studio
+
+The right half is the split central and its build enables ZMK Studio over USB
+with the `studio-rpc-usb-uart` snippet. The left half remains a normal split
+peripheral build. Studio locking is disabled so the keymap can be edited
+without assigning a dedicated unlock binding.
+
+Flash both halves with their matching firmware, connect the right half over
+USB, and open [ZMK Studio](https://zmk.studio/). The physical layout metadata in
+the shield definition allows Studio to display and edit all 42 key positions.
