@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &lt {
@@ -31,7 +32,7 @@
 
         combo_mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <19 18>;
+            key-positions = <29 30>;
         };
 
         combo_lclk {
@@ -52,7 +53,7 @@
 
         combo_bspc {
             bindings = <&kp BSPC>;
-            key-positions = <8 9>;
+            key-positions = <9 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             slow-release;
@@ -116,72 +117,9 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_fnc {
-            bindings = <&mo 3>;
+        combo_sym {
+            bindings = <&mo 2>;
             key-positions = <38 39>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_rctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <6 16>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_rshft {
-            bindings = <&kp RSHFT>;
-            key-positions = <17 7>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_lctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <3 13>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_lshft {
-            bindings = <&kp LSHFT>;
-            key-positions = <2 12>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_lalt {
-            bindings = <&kp LALT>;
-            key-positions = <1 11>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_lwin {
-            bindings = <&kp LWIN>;
-            key-positions = <10 0>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_ralt {
-            bindings = <&kp LALT>;
-            key-positions = <8 18>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_rwin {
-            bindings = <&kp RWIN>;
-            key-positions = <9 19>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_lang {
-            bindings = <&kp RALT>;
-            key-positions = <18 16>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
         };
@@ -193,12 +131,22 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_rb {
-            bindings = <&kp B>;
-            key-positions = <27 28>;
+        combo_lang {
+            bindings = <&kp RALT>;
+            key-positions = <16 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <60>;
             layers = <0>;
+        };
+
+        combo_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <3 4>;
+        };
+
+        combo_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <6 5>;
         };
     };
 
@@ -211,8 +159,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
+            require-prior-idle-ms = <200>;
+            flavor = "tap-preferred";
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 14 24 0 1 3 10 11 12 13 21 22 23 20 35 36 37 38 39>;
         };
@@ -225,8 +173,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
+            require-prior-idle-ms = <200>;
+            flavor = "tap-preferred";
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 27 28 29 30 31 35 36 37 38 39>;
         };
@@ -269,7 +217,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
         };
     };
 
@@ -278,10 +225,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W     &kp E     &kp R       &kp T                                               &kp Y        &kp U  &kp I         &kp O       &kp P
-&kp A      &kp S     &kp D     &kp F       &kp G                                               &kp H        &kp J  &kp K         &kp L       &kp SEMI
-&kp Z      &kp X     &kp C     &kp V       &kp B        &mo 5             &lt 2 B              &kp N        &kp M  &ltq 5 COMMA  &ltq 5 DOT  &ltq 5 SLASH
-&kp LCTRL  &kp LGUI  &kp LALT  &ltq 3 TAB  &ltq 1 BSPC  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                       &kp LALT    &kp LCTRL
+&kp Q        &kp W        &kp E         &kp R         &kp T                                               &kp Y         &kp U         &kp I         &kp O        &kp P
+&hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                               &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B        &mo 5             &lt 3 B              &kp N         &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
+&kp LCTRL    &kp LGUI     &kp LALT      &ltq 3 TAB    &ltq 1 BSPC  &ltq 2 ENTER      &magic_shft LSHFT 0  &ltq 1 SPACE                              &kp LALT     &kp LCTRL
             >;
 
             display-name = "BASE";
@@ -289,10 +236,10 @@
 
         num_layer {
             bindings = <
-&kp GRAVE  &kp HOME  &kp END   &kp BSPC   &kp DEL                              &kp MINUS  &kp N7  &kp N8  &kp N9  &kp ASTRK
-&kp ENTER  &kp LEFT  &kp UP    &kp RIGHT  &kp PG_UP                            &kp PLUS   &kp N4  &kp N5  &kp N6  &kp SQT
-&trans     &kp LBKT  &kp DOWN  &kp RBKT   &kp PG_DN  &kp SPACE      &kp EQUAL  &kp COMMA  &kp N1  &kp N2  &kp N3  &trans
-&trans     &trans    &trans    &trans     &kp N0     &trans         &kp DOT    &kp N0                     &trans  &trans
+&kp GRAVE       &trans          &kp UP           &kp BSPC          &kp DEL                              &kp MINUS  &kp N7         &kp N8         &kp N9        &kp ASTRK
+&hml LWIN RALT  &hml LALT LEFT  &hml LSHFT DOWN  &hml LCTRL RIGHT  &kp PG_UP                            &kp PLUS   &hmr LCTRL N4  &hmr RSHFT N5  &hmr LALT N6  &hmr RWIN SQT
+&kp RCTRL       &trans          &kp HOME         &kp END           &kp PG_DN  &kp SPACE      &kp EQUAL  &kp COMMA  &kp N1         &kp N2         &kp N3        &trans
+&trans          &trans          &trans           &trans            &kp N0     &trans         &kp DOT    &kp N0                                   &trans        &trans
             >;
 
             display-name = "NUM";
@@ -300,10 +247,10 @@
 
         sym_layer {
             bindings = <
-&kp TILDE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp K_MUTE                        &kp UNDER  &kp AMPS  &kp ASTRK  &kp BSPC   &kp DEL
-&kp CAPS   &kp LEFT    &kp UP            &kp RIGHT   &kp C_VOL_UP                      &kp BSLH   &kp DLLR  &kp PRCNT  &kp CARET  &kp DQT
-&trans     &kp LBRC    &kp DOWN          &kp RBRC    &kp C_VOL_DN  &trans      &trans  &kp PIPE   &kp EXCL  &kp AT     &kp HASH   &trans
-&trans     &trans      &trans            &trans      &trans        &trans      &trans  &trans                          &trans     &trans
+&kp TILDE     &kp C_PREV      &kp UP          &kp C_NEXT       &kp C_PLAY_PAUSE                          &kp UNDER  &kp AMPS  &kp ASTRK  &kp BSPC   &kp DEL
+&kp CAPS      &kp LEFT        &kp DOWN        &kp RIGHT        &kp C_VOL_UP                              &kp BSLH   &kp DLLR  &kp PRCNT  &kp CARET  &kp DQT
+&msc SCRL_UP  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp C_VOL_DN      &kp K_MUTE      &trans  &kp PIPE   &kp EXCL  &kp AT     &kp HASH   &trans
+&trans        &trans          &trans          &trans           &trans            &trans          &trans  &trans                          &trans     &trans
             >;
 
             display-name = "SYM";
@@ -311,10 +258,10 @@
 
         fnc_layer {
             bindings = <
-&kp ESC    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                                  &kp LC(Y)  &kp F7  &kp F8  &kp F9  &kp F12
-&kp LC(A)  &kp LC(S)        &trans          &msc SCRL_DOWN   &msc SCRL_UP                             &kp HOME   &kp F4  &kp F5  &kp F6  &kp F11
-&kp LC(Z)  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)     &kp LC(LS(Z))      &trans  &kp END    &kp F1  &kp F2  &kp F3  &kp F10
-&trans     &trans           &trans          &trans           &trans        &trans             &trans  &trans                     &trans  &trans
+&kp ESC          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                               &kp LC(Y)  &kp F7         &kp F8         &kp F9        &kp F12
+&hml LWIN LC(A)  &hml LALT LC(S)  &trans          &trans           &trans                                &kp HOME   &hmr LCTRL F4  &hmr RSHFT F5  &hmr LALT F6  &hmr RWIN F11
+&kp LC(Z)        &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)  &kp LC(LS(Z))      &trans  &kp END    &kp F1         &kp F2         &kp F3        &kp F10
+&trans           &trans           &trans          &trans           &trans     &trans             &trans  &trans                                   &trans        &trans
             >;
 
             display-name = "FNC";
@@ -322,10 +269,10 @@
 
         sys_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans      &trans
-&trans        &trans        &trans        &trans        &trans                            &trans      &trans          &trans  &trans      &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans      &trans          &trans  &trans      &trans
-&bootloader   &sys_reset    &trans        &trans        &trans        &trans      &trans  &trans                              &sys_reset  &bootloader
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_BLE  &out OUT_USB  &out OUT_TOG
+&trans        &trans        &trans        &trans        &trans                            &trans      &trans          &trans        &trans        &trans
+&sys_reset    &trans        &trans        &trans        &trans        &trans      &trans  &trans      &trans          &trans        &trans        &sys_reset
+&bootloader   &trans        &trans        &trans        &trans        &trans      &trans  &trans                                    &trans        &bootloader
             >;
 
             display-name = "SYS";
@@ -347,7 +294,7 @@
         compatible = "zmk,conditional-layers";
 
         SYS_LAYER {
-            if-layers = <1 2>;
+            if-layers = <1 3>;
             then-layer = <4>;
         };
     };
