@@ -11,23 +11,23 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LWIN}
+  - {t: S, h: LALT}
+  - {t: D, h: LSHFT}
+  - {t: F, h: LCTRL}
   - G
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: LCTRL}
+  - {t: K, h: RSHFT}
+  - {t: L, h: LALT}
+  - {t: ;, h: RWIN}
   - Z
   - X
   - C
   - V
   - B
   - SCR
-  - {t: B, h: SYM}
+  - {t: B, h: FNC}
   - N
   - M
   - {t: ',', h: SCR}
@@ -45,8 +45,8 @@ layers:
   - LCTRL
   NUM:
   - '`'
-  - HOME
-  - END
+  - {t: ▽, type: trans}
+  - UP
   - BSPC
   - DEL
   - '-'
@@ -54,20 +54,20 @@ layers:
   - '8'
   - '9'
   - '*'
-  - ENTER
-  - LEFT
-  - UP
-  - RIGHT
+  - {t: RALT, h: LWIN}
+  - {t: LEFT, h: LALT}
+  - {t: DOWN, h: LSHFT}
+  - {t: RIGHT, h: LCTRL}
   - PG UP
   - +
-  - '4'
-  - '5'
-  - '6'
-  - ''''
+  - {t: '4', h: LCTRL}
+  - {t: '5', h: RSHFT}
+  - {t: '6', h: LALT}
+  - {t: '''', h: RWIN}
+  - RCTRL
   - {t: ▽, type: trans}
-  - '['
-  - DOWN
-  - ']'
+  - HOME
+  - END
   - PG DN
   - SPACE
   - '='
@@ -89,9 +89,9 @@ layers:
   SYM:
   - '~'
   - PREV
-  - PLAY PAUSE
+  - UP
   - NEXT
-  - MUTE
+  - PLAY PAUSE
   - _
   - '&'
   - '*'
@@ -99,7 +99,7 @@ layers:
   - DEL
   - CAPS
   - LEFT
-  - UP
+  - DOWN
   - RIGHT
   - VOL UP
   - \
@@ -107,13 +107,13 @@ layers:
   - '%'
   - ^
   - '"'
-  - {t: ▽, type: trans}
-  - '{'
-  - DOWN
-  - '}'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
   - VOL DN
+  - MUTE
   - {t: ▽, type: trans}
-  - {type: held}
   - '|'
   - '!'
   - '@'
@@ -124,9 +124,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FNC:
@@ -140,23 +140,23 @@ layers:
   - F8
   - F9
   - F12
-  - Ctl+A
-  - Ctl+S
+  - {t: Ctl+A, h: LWIN}
+  - {t: Ctl+S, h: LALT}
   - {t: ▽, type: trans}
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - HOME
-  - F4
-  - F5
-  - F6
-  - F11
+  - {t: F4, h: LCTRL}
+  - {t: F5, h: RSHFT}
+  - {t: F6, h: LALT}
+  - {t: F11, h: RWIN}
   - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
   - Ctl+B
   - Ctl+Sft+Z
-  - {t: ▽, type: trans}
+  - {type: held}
   - END
   - F1
   - F2
@@ -165,11 +165,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held alternate}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYS:
@@ -180,6 +180,9 @@ layers:
   - {t: BT, h: '4'}
   - BT CLR
   - BT CLR ALL
+  - OUT BLE
+  - OUT USB
+  - OUT TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -190,10 +193,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&sys_reset'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -204,16 +204,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&sys_reset'
   - '&bootloader'
-  - '&sys_reset'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - '&sys_reset'
+  - {t: ▽, type: trans}
   - '&bootloader'
   SCR:
   - {t: ▽, type: trans}
@@ -263,13 +263,13 @@ combos:
   k: (
 - p: [6, 7]
   k: )
-- p: [19, 18]
+- p: [29, 30]
   k: '&mkp MCLK'
 - p: [29, 17]
   k: '&mkp LCLK'
 - p: [18, 30]
   k: '&mkp RCLK'
-- p: [8, 9]
+- p: [9, 19]
   k: BSPC
 - p: [16, 28]
   k: '&mkp MB4'
@@ -288,27 +288,13 @@ combos:
 - p: [19, 31]
   k: ENTER
 - p: [38, 39]
-  k: FNC
-- p: [6, 16]
-  k: LCTRL
-- p: [17, 7]
-  k: RSHFT
-- p: [3, 13]
-  k: LCTRL
-- p: [2, 12]
-  k: LSHFT
-- p: [1, 11]
-  k: LALT
-- p: [10, 0]
-  k: LWIN
-- p: [8, 18]
-  k: LALT
-- p: [9, 19]
-  k: RWIN
-- p: [18, 16]
-  k: RALT
+  k: SYM
 - p: [17, 19]
   k: RCTRL
-- p: [27, 28]
-  k: B
+- p: [16, 18]
+  k: RALT
   l: [BASE]
+- p: [3, 4]
+  k: '['
+- p: [6, 5]
+  k: ']'
