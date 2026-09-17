@@ -27,12 +27,12 @@ layers:
   - V
   - B
   - SCR
-  - {t: B, h: FNC}
+  - FNC
+  - B
   - N
-  - M
+  - {t: M, h: SCR}
   - {t: ',', h: SCR}
   - {t: ., h: SCR}
-  - {t: /, h: SCR}
   - LCTRL
   - LGUI
   - LALT
@@ -75,7 +75,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -118,7 +118,7 @@ layers:
   - '!'
   - '@'
   - '#'
-  - {t: ▽, type: trans}
+  - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
