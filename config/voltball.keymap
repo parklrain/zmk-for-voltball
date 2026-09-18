@@ -223,7 +223,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Default_layer {
             bindings = <
 &kp Q        &kp W        &kp E         &kp R         &kp T                                               &kp Y         &kp U         &kp I         &kp O         &kp SEMI
 &hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                               &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L   &hmr RWIN P
@@ -234,7 +234,7 @@
             display-name = "BASE";
         };
 
-        num_layer {
+        Num_layer {
             bindings = <
 &kp GRAVE       &trans          &kp UP           &kp BSPC          &kp DEL                              &kp MINUS  &kp N7         &kp N8         &kp N9        &kp ASTRK
 &hml LWIN RALT  &hml LALT LEFT  &hml LSHFT DOWN  &hml LCTRL RIGHT  &kp PG_UP                            &kp PLUS   &hmr LCTRL N4  &hmr RSHFT N5  &hmr LALT N6  &hmr RWIN SQT
@@ -245,7 +245,7 @@
             display-name = "NUM";
         };
 
-        sym_layer {
+        Sym_layer {
             bindings = <
 &kp TILDE     &kp C_PREV      &kp UP          &kp C_NEXT       &kp C_PLAY_PAUSE                          &kp UNDER  &kp AMPS  &kp ASTRK  &kp BSPC   &kp DEL
 &kp CAPS      &kp LEFT        &kp DOWN        &kp RIGHT        &kp C_VOL_UP                              &kp BSLH   &kp DLLR  &kp PRCNT  &kp CARET  &kp DQT
@@ -256,7 +256,7 @@
             display-name = "SYM";
         };
 
-        fnc_layer {
+        Fnc_layer {
             bindings = <
 &kp ESC          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                               &kp LC(Y)  &kp F7         &kp F8         &kp F9        &kp F12
 &hml LWIN LC(A)  &hml LALT LC(S)  &trans          &trans           &trans                                &kp HOME   &hmr LCTRL F4  &hmr RSHFT F5  &hmr LALT F6  &hmr RWIN F11
@@ -267,7 +267,7 @@
             display-name = "FNC";
         };
 
-        sys_layer {
+        Sys_layer {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_BLE  &out OUT_USB  &out OUT_TOG
 &trans        &trans        &trans        &trans        &trans                            &trans      &trans          &trans        &trans        &trans
@@ -278,7 +278,7 @@
             display-name = "SYS";
         };
 
-        scr_layer {
+        Scrv_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
@@ -286,7 +286,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                  &trans  &trans
             >;
 
-            label = "SCR";
+            label = "SCRV";
+        };
+
+        Scrh_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                  &trans  &trans
+            >;
+
+            label = "SCRH";
         };
     };
 
