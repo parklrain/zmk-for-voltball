@@ -10,6 +10,18 @@
 
 / {
     /*
+     * X축(HWHEEL)만 별도로 스케일링하는 processor.
+     * 0 1 = 가로 스크롤을 0배로 만들어 차단.
+     */
+    zip_scroll_x_scaler: zip_scroll_x_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_HWHEEL>;
+        track-remainders;
+    };
+
+    /*
      * 中文: 轨迹球移动超过阈值时临时进入指定层，用于把普通指针移动切到导航/鼠标层。
      * English: Temporarily activates a target layer when trackball movement exceeds the threshold.
      */
@@ -141,6 +153,13 @@
         input-processors =
             /* 中文: 将指针移动映射为滚动事件；English: Map pointer motion to scroll events. */
             <&zip_xy_to_scroll_mapper>,
+            /*
+             * Layer 5: 세로 스크롤 전용
+             *
+             * zip_xy_to_scroll_mapper가 X를 HWHEEL, Y를 WHEEL로 변환한 뒤
+             * zip_scroll_x_scaler 0 1이 HWHEEL만 0배로 제거한다.
+             */
+            <&zip_scroll_x_scaler 0 1>,
             /* 中文: 反转滚动 Y 轴；English: Invert the scroll Y axis. */
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             /* 中文: 将滚动量缩放为 1/10；English: Scale scroll amount to 1/10. */
