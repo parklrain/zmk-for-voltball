@@ -21,6 +21,14 @@
         track-remainders;
     };
 
+    zip_scroll_y_scaler: zip_scroll_y_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_WHEEL>;
+        track-remainders;
+    };
+
     /*
      * 中文: 轨迹球移动超过阈值时临时进入指定层，用于把普通指针移动切到导航/鼠标层。
      * English: Temporarily activates a target layer when trackball movement exceeds the threshold.
@@ -165,4 +173,14 @@
             /* 中文: 将滚动量缩放为 1/10；English: Scale scroll amount to 1/10. */
             <&zip_scroll_scaler 1 20>;
     };
+
+    scroller_horizontal {
+        layers = <6>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_y_scaler 0 1
+            &zip_scroll_scaler 1 20
+            >;
+    };
+
 };
