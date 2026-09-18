@@ -32,7 +32,7 @@ layers:
   - N
   - {t: M, h: SCRV}
   - {t: ',', h: SCRV}
-  - {t: ., h: SCRV}
+  - {t: ., h: SCRH}
   - LCTRL
   - LGUI
   - LALT
@@ -247,7 +247,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held alternate}
   - {type: held alternate}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -290,7 +290,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
