@@ -28,11 +28,11 @@ layers:
   - B
   - SCR
   - FNC
-  - B
   - N
-  - {t: M, h: SCR}
+  - M
   - {t: ',', h: SCR}
   - {t: ., h: SCR}
+  - {t: B, h: SCR}
   - LCTRL
   - LGUI
   - LALT
