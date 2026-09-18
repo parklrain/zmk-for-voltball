@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - ;
   - {t: A, h: LWIN}
   - {t: S, h: LALT}
   - {t: D, h: LSHFT}
@@ -20,7 +20,7 @@ layers:
   - {t: J, h: LCTRL}
   - {t: K, h: RSHFT}
   - {t: L, h: LALT}
-  - {t: ;, h: RWIN}
+  - {t: P, h: RWIN}
   - Z
   - X
   - C
@@ -28,11 +28,11 @@ layers:
   - B
   - SCR
   - FNC
-  - B
   - N
-  - {t: M, h: SCR}
+  - M
   - {t: ',', h: SCR}
   - {t: ., h: SCR}
+  - {t: B, h: SCR}
   - LCTRL
   - LGUI
   - LALT
